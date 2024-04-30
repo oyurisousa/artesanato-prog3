@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: white;
+  --black: black;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section.banner {
   width: 90%;
   background-image: url('../assets/banner.png');
