@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.banner {
+  width: 90%;
+  background-image: url('../assets/banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+section.about {
+  width: 90%;
+  background-image: url('../assets/about-us.png');
+  background-repeat: no-repeat;
+}
