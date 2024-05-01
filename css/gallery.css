@@ -25,10 +25,57 @@ section.gallery div.itens {
 
 div.itens .single-item {
   width: 320px;
-  
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  border-radius: 2px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+div.itens .single-item:hover {
+  transform: scale(1.05);
+}
+
+div.itens .single-item img {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+div.itens .single-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+div.itens .single-item span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+div.itens .single-item p {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+}
+
+div.itens .single-item-content :nth-child(3) {
+  font-size: 20px;
+}
+
+div.itens .single-item-content button {
+  padding: 8px;
+  background-color: var(--background-yellow);
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+
+  cursor: pointer;
 }

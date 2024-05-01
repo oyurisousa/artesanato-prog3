@@ -8,7 +8,7 @@
   --banner-text-secondary: #B1B1B1;
 
   --color-box-shadow: #111;
-  --background-icons: #F9940A;
+  --background-yellow: #F9940A;
 
   --text-color-active: #ECA52F;
 }
@@ -18,13 +18,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: var(--black);
+  color: #65360D;
 }
 
 
 html,
 body {
   height: 100vh;
+}
+
+.active {
+  color: var(--text-color-active)
 }
 
 li {
