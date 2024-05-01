@@ -1,0 +1,34 @@
+section.gallery {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+section.gallery h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+section.gallery div.itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+div.itens .single-item {
+  width: 320px;
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
