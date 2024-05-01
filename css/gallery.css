@@ -25,7 +25,7 @@ section.gallery div.itens {
 
 div.itens .single-item {
   width: 320px;
-  border: 1px solid red;
+  
 
   display: flex;
   flex-direction: column;
