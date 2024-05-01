@@ -62,6 +62,10 @@ header {
   height: 70px;
 }
 
+.header-mobile {
+  display: none;
+}
+
 header nav ul {
   display: flex;
   justify-content: center;
@@ -139,5 +143,39 @@ footer .authors {
   flex-direction: column;
   padding: 2px;
   border-left: 0.4px solid var(--banner-text-secondary);
+
+}
+
+
+@media screen and (max-width: 495px) {
+  .header-desktop {
+    display: none;
+  }
+
+  header.header-mobile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .nav-mobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
 }

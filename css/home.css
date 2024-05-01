@@ -1,6 +1,6 @@
 section.banner {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 600px;
 
   margin: 0 auto;
@@ -34,13 +34,13 @@ section.banner .banner-content {
 }
 
 .banner-content h1 {
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   color: var(--banner-text-principal);
 }
 
 .banner-content h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: lighter;
   text-align: center;
 
@@ -53,4 +53,37 @@ section.banner .banner-content {
   font-weight: 600;
   border-radius: 8px;
   border: 0;
+}
+
+@media (max-width: 425px) {
+  section.banner {
+    width: 100%;
+  }
+
+  main {
+    padding: 0 2%;
+  }
+
+  section.banner {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  section.banner .banner-content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  .banner-content h2 {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
