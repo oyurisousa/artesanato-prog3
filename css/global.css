@@ -8,7 +8,8 @@
   --banner-text-secondary: #B1B1B1;
 
   --color-box-shadow: #111;
-  --background-yellow: #F9940A;
+  --yellow: #F9940A;
+  --yellow-hover: #d88612;
 
   --text-color-active: #ECA52F;
 }
@@ -25,6 +26,12 @@
 html,
 body {
   height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .active {
@@ -77,4 +84,60 @@ header nav ul li {
   background-color: var(--background-icons);
   border-radius: 50%;
   padding: 2px;
+}
+
+footer {
+  width: 100vw;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #65360D;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
+footer .info-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 2px;
+  border-left: 0.4px solid var(--banner-text-secondary);
+}
+
+footer address,
+footer .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+footer .social-medias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .authors {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  border-left: 0.4px solid var(--banner-text-secondary);
+
 }
