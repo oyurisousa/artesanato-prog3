@@ -80,6 +80,11 @@ div.itens .single-item-content button {
   font-weight: 600;
 
   cursor: pointer;
+  transition: 0.3s;
+}
+
+div.itens .single-item-content button:hover {
+  background-color: var(--yellow-hover);
 }
 
 @media (max-width: 425px) {

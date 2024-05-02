@@ -3,14 +3,16 @@
 :root {
   --white: white;
   --black: black;
-  --primary: #65360D;
-  --banner-text-principal: #E8E8E8;
-  --banner-text-secondary: #B1B1B1;
 
-  --color-box-shadow: #111;
+  --primary: #65360D;
+
   --yellow: #F9940A;
   --yellow-hover: #d88612;
 
+  --banner-text-main: #E8E8E8;
+  --banner-text-secondary: #B1B1B1;
+
+  --color-box-shadow: #111;
   --text-color-active: #ECA52F;
 }
 
@@ -19,14 +21,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: #65360D;
+  color: var(--black);
 }
 
-
-html,
-body {
-  height: 100vh;
-}
 
 body {
   display: flex;
@@ -36,8 +33,7 @@ body {
 
 main {
   width: 100%;
-  /* height: 100%; */
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -55,18 +51,20 @@ a {
 
 header {
   width: 100vw;
-  height: 80px;
+  height: 5rem;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 15px 10px -15px var(--color-box-shadow);
-  margin-bottom: 50px;
+
+  margin-bottom: 2.5rem;
+  padding: 0 2%;
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
 }
 
 .header-mobile {
@@ -77,35 +75,41 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 header nav ul li {
-  font-size: 20px;
+  font-size: 1.125rem;
 }
 
 .header-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.75rem;
 }
 
 .header-icons img {
   background-color: var(--yellow);
   border-radius: 50%;
-  padding: 2px;
+  padding: 0.125rem;
+}
+
+.header-icons img:hover {
+  background-color: var(--yellow-hover);
 }
 
 footer {
   width: 100vw;
-  height: 80px;
+  height: 5rem;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 40px;
-  background-color: #65360D;
+
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+  background-color: var(--primary);
 }
 
 footer a {
@@ -113,17 +117,17 @@ footer a {
 }
 
 footer img {
-  width: 24px;
-  height: 24px;
-  padding: 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.125rem;
 }
 
 footer .info-contact {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 10px;
-  padding: 2px;
+  gap: 0.75rem;
+  padding: 0.125rem;
   border-left: 0.4px solid var(--banner-text-secondary);
 }
 
@@ -132,9 +136,9 @@ footer .phone {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.25rem;
 
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 
 }
@@ -142,13 +146,13 @@ footer .phone {
 footer .social-medias {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.75rem;
 }
 
 footer .authors {
   display: flex;
   flex-direction: column;
-  padding: 2px;
+  padding: 0.25rem;
   border-left: 0.4px solid var(--banner-text-secondary);
 
 }

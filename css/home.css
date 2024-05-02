@@ -39,7 +39,7 @@ section.banner .banner-content {
 .banner-content h1 {
   font-size: 2rem;
   text-align: center;
-  color: var(--banner-text-principal);
+  color: var(--banner-text-main);
 }
 
 .banner-content h2 {
