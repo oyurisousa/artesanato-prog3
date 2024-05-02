@@ -1,12 +1,7 @@
-main {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 section.banner {
-  position: relative;
-  width: 100%;
-  height: 600px;
+  width: 95%;
+  max-width: 62.5rem;
+  height: 37.5rem;
 
   margin: 0 auto;
 
@@ -18,25 +13,27 @@ section.banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1rem;
 }
 
-section.banner .filter {
+section.banner::before {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: #65360D;
-  opacity: 0.5;
-  position: absolute;
-  z-index: -1;
+  opacity: 0.4;
+  border-radius: 1rem;
 }
 
 section.banner .banner-content {
+  position: absolute;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 
-  z-index: 1;
 }
 
 .banner-content h1 {
@@ -46,35 +43,52 @@ section.banner .banner-content {
 }
 
 .banner-content h2 {
-  font-size: 1.25rem;
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: center;
 
   color: var(--banner-text-secondary);
 }
 
-.banner-content button {
-  width: 150px;
-  height: 40px;
+.banner-content a {
+  width: 200px;
+  height: 45px;
+  padding: 0.5rem;
+
   font-weight: 600;
+
   border-radius: 8px;
+  cursor: pointer;
   border: 0;
+  background-color: var(--yellow);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: var(--white);
+}
+
+.banner-content a:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  section.banner .banner-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 425px) {
   section.banner {
     width: 100%;
-  }
-
-  main {
-    padding: 0 2%;
-  }
-
-  section.banner {
-    width: 100%;
     height: 400px;
     background-size: cover;
     background-position: center;
+    border-radius: 0;
   }
 
   section.banner .banner-content {
@@ -85,11 +99,18 @@ section.banner .banner-content {
 
   .banner-content h1 {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
   }
 
   .banner-content h2 {
+    width: 90%;
     font-size: 1rem;
+    font-weight: 300;
     text-align: justify;
+  }
+
+  .banner-content a {
+    width: auto;
+    padding: 0.8rem 0.5rem;
   }
 }
