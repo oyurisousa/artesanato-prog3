@@ -24,7 +24,8 @@ section.gallery div.itens {
 }
 
 div.itens .single-item {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
 
   display: flex;
   flex-direction: column;
@@ -42,6 +43,7 @@ div.itens .single-item:hover {
 }
 
 div.itens .single-item img {
+  width: 100%;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -72,10 +74,16 @@ div.itens .single-item-content :nth-child(3) {
 
 div.itens .single-item-content button {
   padding: 8px;
-  background-color: var(--background-yellow);
+  background-color: var(--yellow);
   border: 0;
   border-radius: 8px;
   font-weight: 600;
 
   cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  section.gallery .itens {
+    padding: 0 2%;
+  }
 }

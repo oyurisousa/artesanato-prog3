@@ -1,0 +1,58 @@
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main section.mission-vision-values {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission,
+.values,
+.vision {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.mission-vision-values p {
+  width: 60%;
+}
+
+.mission-vision-values h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  section.mission-vision-values {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mission,
+  .values,
+  .vision {
+    width: 100%;
+  }
+
+  .mission-vision-values p {
+    width: 90%;
+    text-align: left;
+  }
+
+  .mission-vision-values h3 {
+    font-size: 1.5rem;
+  }
+}

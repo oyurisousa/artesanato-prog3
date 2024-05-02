@@ -85,7 +85,7 @@ header nav ul li {
 }
 
 .header-icons img {
-  background-color: var(--background-icons);
+  background-color: var(--yellow);
   border-radius: 50%;
   padding: 2px;
 }
