@@ -3,6 +3,11 @@ header {
   z-index: 1;
 }
 
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
 footer {
   margin-top: 0;
   border-top: 0.4px solid var(--banner-text-secondary);
