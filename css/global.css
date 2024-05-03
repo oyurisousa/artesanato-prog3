@@ -24,6 +24,10 @@
   color: var(--black);
 }
 
+html,
+body {
+  height: 100%;
+}
 
 body {
   display: flex;
