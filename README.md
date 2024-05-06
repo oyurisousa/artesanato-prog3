@@ -32,4 +32,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é um site de uma loja de imóveis artesanais.
 
-- [Acesse o projeto finalizado, online](https://oyurisousa.github.io/artesanato-prog3/)
+- [Acesse o projeto finalizado e online](https://oyurisousa.github.io/artesanato-prog3)
